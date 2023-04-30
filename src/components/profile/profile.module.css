@@ -1,10 +1,11 @@
 .profile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: rgb(220, 220, 220);
-    padding: 10px;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .description {
