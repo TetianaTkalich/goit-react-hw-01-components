@@ -15,7 +15,8 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-     }}
+        flexDirection: 'column',
+      }}
     >
       <Profile
         avatar={user.avatar}
@@ -24,6 +25,9 @@ export const App = () => {
         tag={user.tag}
         username={user.username}
       />
+      <Statistic title="Upload stats" data={data} />
+      <FriendList friends={friends}/>
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
