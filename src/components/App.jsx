@@ -2,7 +2,7 @@ import { Profile } from './Profile/Profile';
 import { FriendList } from './FriendList/FriendList';
 import { Statistics } from "./Statistics/Statistics";
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
-///json unpload//
+
 import user from '../components/json/user.json';
 import data from '../components/json/data.json';
 import friends from '../components/json/friends.json';
