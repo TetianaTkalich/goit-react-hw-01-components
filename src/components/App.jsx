@@ -1,6 +1,6 @@
 import { Profile } from './Profile/Profile';
-import { Statistic } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList';
+import { Statistics } from "./Statistics/Statistics";
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 ///JSON UPLOAD///
 import user from '../components/json/user.json';
@@ -12,22 +12,29 @@ export const App = () => {
   return (
     <div
       style={{
-        display: 'flex',
+         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        flexDirection: 'column',
+        padding: 20,
+        color: '#010101',
       }}
     >
+   
       <Profile
-        avatar={user.avatar}
-        location={user.location}
-        stats={user.stats}
+        userName={user.username}
         tag={user.tag}
-        username={user.username}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
       />
-      <Statistic title="Upload stats" data={data} />
+
+      <Statistics title="Upload stats" stats={data}/>
+
       <FriendList friends={friends}/>
+
       <TransactionHistory items={transactions} />
     </div>
   );
 };
+    
